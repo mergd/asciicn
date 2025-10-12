@@ -59,7 +59,7 @@ export default function Accordion({
     <div className={`space-y-1 ${className}`}>
       {items.map((item) => {
         const isOpen = openItems.has(item.id);
-        const isDisabled = item.disabled;
+        const isDisabled = item.disabled ?? false;
 
         return (
           <AccordionItemComponent
@@ -237,5 +237,3 @@ export function AccordionItem({
     </div>
   );
 }
-
-export { Accordion, AccordionItem };

@@ -159,5 +159,3 @@ export function ProgressBar({
     </div>
   );
 }
-
-export { Progress, ProgressBar };
