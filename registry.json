@@ -1,0 +1,311 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "asciicn",
+  "homepage": "https://github.com/yourusername/asciicn",
+  "items": [
+    {
+      "name": "menu",
+      "type": "registry:ui",
+      "title": "Menu",
+      "description": "A sidebar navigation menu component with ASCII styling and active state indicators.",
+      "dependencies": ["next"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/menu.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "accent": "210 40% 94%",
+          "border": "214 32% 88%"
+        },
+        "dark": {
+          "accent": "217 33% 20%",
+          "border": "217 33% 24%"
+        }
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A text input component with ASCII borders and multiple variants.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "input": "214 32% 88%",
+          "ring": "221 83% 53%"
+        },
+        "dark": {
+          "input": "217 33% 24%",
+          "ring": "224 76% 48%"
+        }
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A badge component with Unicode block character backgrounds and multiple variants.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/badge.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "muted": "214 32% 91%",
+          "muted-foreground": "215 16% 47%",
+          "destructive": "0 84% 60%"
+        },
+        "dark": {
+          "muted": "217 33% 17%",
+          "muted-foreground": "215 20% 65%",
+          "destructive": "0 63% 31%"
+        }
+      }
+    },
+    {
+      "name": "radio",
+      "type": "registry:ui",
+      "title": "Radio",
+      "description": "Radio button groups with ASCII indicators for terminal-style selection.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/radio.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {},
+        "dark": {}
+      }
+    },
+    {
+      "name": "dropdown",
+      "type": "registry:ui",
+      "title": "Dropdown",
+      "description": "A dropdown select component with ASCII borders, keyboard navigation, and multiple variants.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/dropdown.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "accent": "210 40% 94%",
+          "border": "214 32% 88%"
+        },
+        "dark": {
+          "accent": "217 33% 20%",
+          "border": "217 33% 24%"
+        }
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A container component with ASCII borders and unicode pattern backgrounds.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "border": "214 32% 88%",
+          "muted": "214 32% 91%"
+        },
+        "dark": {
+          "border": "217 33% 24%",
+          "muted": "217 33% 17%"
+        }
+      }
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Interactive button component with bracket notation for secondary variant.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "primary": "221 83% 53%",
+          "accent": "210 40% 94%"
+        },
+        "dark": {
+          "primary": "217 91% 60%",
+          "accent": "217 33% 20%"
+        }
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Container component with ASCII borders and Unicode pattern backgrounds.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "card": "0 0% 100%",
+          "card-foreground": "222 47% 11%"
+        },
+        "dark": {
+          "card": "217 33% 17%",
+          "card-foreground": "213 31% 91%"
+        }
+      }
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Collapsible sections with ASCII expand/collapse indicators.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {},
+        "dark": {}
+      }
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Progress bars with Unicode block characters for visual completion indicators.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/progress.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "muted": "214 32% 91%"
+        },
+        "dark": {
+          "muted": "217 33% 17%"
+        }
+      }
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A modal dialog component with backdrop overlay and ASCII borders.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "card": "0 0% 100%",
+          "border": "214 32% 88%"
+        },
+        "dark": {
+          "card": "222 47% 11%",
+          "border": "217 33% 24%"
+        }
+      }
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Toggle switch component with ASCII states using Unicode characters.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/switch.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "primary": "221 83% 53%",
+          "border": "214 32% 88%"
+        },
+        "dark": {
+          "primary": "217 91% 60%",
+          "border": "217 33% 24%"
+        }
+      }
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Notification boxes with ASCII borders, Unicode pattern backgrounds, and semantic variants.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/ascii/alert.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "card": "0 0% 100%",
+          "border": "214 32% 88%",
+          "primary": "221 83% 53%",
+          "destructive": "0 84% 60%"
+        },
+        "dark": {
+          "card": "217 33% 17%",
+          "border": "217 33% 24%",
+          "primary": "217 91% 60%",
+          "destructive": "0 63% 31%"
+        }
+      }
+    }
+  ]
+}
