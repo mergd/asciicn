@@ -1,5 +1,5 @@
 import DocsLayout from "@/components/layout/docs-layout";
-import Accordion, { AccordionItem } from "@/registry/ascii/accordion";
+import { Accordion, AccordionItem } from "@/registry/ascii/accordion";
 import Badge from "@/registry/ascii/badge";
 
 export default function AccordionPage() {
@@ -99,7 +99,7 @@ export default function AccordionPage() {
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">usage</h2>
-          <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">{`import Accordion from "@/registry/ascii/accordion";
+          <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">{`import { Accordion } from "@/registry/ascii/accordion";
 
 const items = [
   {
