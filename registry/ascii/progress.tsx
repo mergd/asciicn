@@ -12,7 +12,7 @@ interface ProgressProps {
   size?: "sm" | "md" | "lg";
 }
 
-export default function Progress({
+function Progress({
   value,
   max = 100,
   className = "",
@@ -134,7 +134,7 @@ interface ProgressBarProps {
   showValue?: boolean;
 }
 
-export function ProgressBar({
+function ProgressBar({
   value,
   max = 100,
   className = "",

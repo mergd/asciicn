@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import DocsLayout from "@/components/layout/docs-layout";
-import Progress, { ProgressBar } from "@/registry/ascii/progress";
+import { Progress, ProgressBar } from "@/registry/ascii/progress";
 import Badge from "@/registry/ascii/badge";
 import Button from "@/registry/ascii/button";
 
@@ -46,7 +46,7 @@ export default function ProgressPage() {
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">usage</h2>
-          <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">{`import Progress from "@/registry/ascii/progress";
+          <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">{`import { Progress } from "@/registry/ascii/progress";
 
 <Progress value={60} max={100} />
 <Progress value={45} showValue />

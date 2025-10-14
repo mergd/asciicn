@@ -17,7 +17,7 @@ interface AccordionProps {
   variant?: "single" | "double";
 }
 
-export default function Accordion({
+function Accordion({
   items,
   type = "single",
   defaultValue,
@@ -177,7 +177,7 @@ interface AccordionItemProps {
   className?: string;
 }
 
-export function AccordionItem({
+function AccordionItem({
   id,
   title,
   children,
