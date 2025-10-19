@@ -118,7 +118,7 @@ export default function DocsLayout({
         <div className="container px-4">
           <div className="flex h-12 items-center justify-between text-sm">
             <Link href="/" className="flex items-center gap-2">
-              <span>┌─ asciicn</span>
+              <span>󰅨 asciicn</span>
               <Badge variant="primary" size="sm">
                 v0.1
               </Badge>
