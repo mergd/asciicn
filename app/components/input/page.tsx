@@ -73,7 +73,7 @@ export default function InputPage() {
             <div>
               <h3 className="mb-3 text-sm">with icon</h3>
               <Input
-                icon="🔍"
+                icon="󰍉"
                 placeholder="search..."
                 value={value}
                 onChange={(e) => setValue(e.target.value)}

@@ -123,7 +123,15 @@ export default function DocsLayout({
                 v0.1
               </Badge>
             </Link>
+            <Link
+              href="https://weekend.fldr.zip"
+              className="flex items-center gap-2"
+            >
+              <span>󰻙 Weekend</span>
+            </Link>
+
             <div className="flex items-center gap-4">
+              <Link href="https://github.com/mergd/asciicn"></Link>
               <button
                 onClick={() => setShowShortcuts((prev) => !prev)}
                 className="hidden md:inline text-xs text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-1 focus:ring-ring"
