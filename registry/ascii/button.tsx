@@ -1,10 +1,10 @@
 "use client";
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "icon";
   className?: string;
   icon?: string;
   type?: "button" | "submit" | "reset";
@@ -20,19 +20,23 @@ export default function Button({
   type = "button",
 }: ButtonProps) {
   const baseClasses =
-    "px-3 py-1.5 transition-all duration-200 cursor-pointer select-none text-sm focus:outline-none focus:ring-1 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background";
+    "px-1.5 py-0.5 transition-all duration-200 cursor-pointer select-none text-sm focus:outline-none focus:ring-1 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background font-medium";
 
   const variantClasses = {
     primary:
-      "text-primary hover:bg-primary hover:text-primary-foreground disabled:hover:bg-transparent disabled:hover:text-primary",
+      "bg-primary/30 text-primary-foreground hover:bg-primary/50 disabled:bg-primary/20 disabled:hover:bg-primary/35 disabled:text-primary-foreground",
     secondary:
-      "text-secondary-foreground border border-border hover:bg-accent hover:border-border disabled:hover:bg-transparent",
-    ghost: "hover:text-primary hover:bg-accent/50 disabled:no-underline",
+      "bg-secondary/30 text-secondary-foreground hover:bg-secondary/50 disabled:bg-secondary/15 disabled:hover:bg-secondary/25",
+    ghost:
+      "bg-accent/20 text-foreground hover:bg-accent/40 opacity-60 hover:opacity-100 disabled:bg-accent/10 disabled:hover:bg-accent/20",
+    icon: "text-primary hover:bg-primary/40 disabled:hover:bg-primary/20 p-1",
   };
+
+  const isIconOnly = variant === "icon" || (!children && icon);
 
   const content = (
     <>
-      {icon && <span className="mr-1">{icon}</span>}
+      {icon && <span className={children ? "mr-1" : ""}>{icon}</span>}
       {children}
     </>
   );
@@ -45,6 +49,7 @@ export default function Button({
       className={`${baseClasses} ${variantClasses[variant]} ${
         disabled ? "opacity-40 cursor-not-allowed" : ""
       } ${className}`}
+      aria-label={isIconOnly ? String(children) : undefined}
     >
       {variant === "secondary" ? <>[ {content} ]</> : content}
     </button>

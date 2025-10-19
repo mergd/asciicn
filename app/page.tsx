@@ -119,7 +119,7 @@ export default function Home() {
                 install via shadcn cli:
               </p>
               <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">
-                npx shadcn@latest add https://asciicn.com/r/input.json
+                npx shadcn@latest add https://asciicn.fldr.zip/r/input.json
               </pre>
             </div>
           </div>

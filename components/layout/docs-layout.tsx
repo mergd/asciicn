@@ -10,27 +10,28 @@ const menuSections = [
   {
     title: "getting started",
     items: [
-      { label: "introduction", href: "/", icon: "📖", key: "i" },
-      { label: "installation", href: "/installation", icon: "⚡", key: "s" },
+      { label: "introduction", href: "/", icon: "󰎕", key: "i" },
+      { label: "installation", href: "/installation", icon: "󰈞", key: "s" },
     ],
   },
   {
     title: "components",
     items: [
-      { label: "input", href: "/components/input", icon: "⌨", key: "1" },
-      { label: "badge", href: "/components/badge", icon: "🏷", key: "2" },
-      { label: "button", href: "/components/button", icon: "▣", key: "3" },
-      { label: "radio", href: "/components/radio", icon: "◉", key: "4" },
-      { label: "card", href: "/components/card", icon: "▭", key: "7" },
+      { label: "input", href: "/components/input", icon: "󰌘", key: "1" },
+      { label: "badge", href: "/components/badge", icon: "󰏷", key: "2" },
+      { label: "button", href: "/components/button", icon: "󰒃", key: "3" },
+      { label: "radio", href: "/components/radio", icon: "󰮯", key: "4" },
+      { label: "checkbox", href: "/components/checkbox", icon: "󰄬", key: "c" },
+      { label: "card", href: "/components/card", icon: "󰨶", key: "7" },
       {
         label: "accordion",
         href: "/components/accordion",
-        icon: "▼",
+        icon: "󰝥",
         key: "8",
       },
-      { label: "progress", href: "/components/progress", icon: "█", key: "9" },
-      { label: "dialog", href: "/components/dialog", icon: "▢", key: "5" },
-      { label: "dropdown", href: "/components/dropdown", icon: "▽", key: "6" },
+      { label: "progress", href: "/components/progress", icon: "󰀼", key: "9" },
+      { label: "dialog", href: "/components/dialog", icon: "󰆧", key: "5" },
+      { label: "dropdown", href: "/components/dropdown", icon: "󰍉", key: "6" },
     ],
   },
 ];
@@ -94,6 +95,10 @@ export default function DocsLayout({
           case "9":
             e.preventDefault();
             router.push("/components/progress");
+            break;
+          case "c":
+            e.preventDefault();
+            router.push("/components/checkbox");
             break;
         }
       }
@@ -183,6 +188,10 @@ export default function DocsLayout({
                 <span>^4</span>
               </div>
               <div className="flex items-center justify-between">
+                <span className="text-muted-foreground">checkbox</span>
+                <span>^c</span>
+              </div>
+              <div className="flex items-center justify-between">
                 <span className="text-muted-foreground">dialog</span>
                 <span>^5</span>
               </div>
@@ -231,7 +240,7 @@ export default function DocsLayout({
       <footer className="border-t border-border mt-auto">
         <div className="container px-4">
           <div className="flex h-10 items-center justify-between text-xs text-muted-foreground">
-            <span>next.js • tailwind • jetbrains mono</span>
+            <span>next.js • tailwind • meslo nerd font</span>
             <span>[^k]</span>
           </div>
         </div>

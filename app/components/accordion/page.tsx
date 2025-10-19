@@ -42,7 +42,7 @@ export default function AccordionPage() {
       id: "m1",
       title: "installation",
       content:
-        "run: npx shadcn@latest add https://asciicn.com/r/accordion.json",
+        "run: npx shadcn@latest add https://asciicn.fldr.zip/r/accordion.json",
     },
     {
       id: "m2",
@@ -93,7 +93,7 @@ export default function AccordionPage() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">installation</h2>
           <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">
-            npx shadcn@latest add https://asciicn.com/r/accordion.json
+            npx shadcn@latest add https://asciicn.fldr.zip/r/accordion.json
           </pre>
         </div>
 

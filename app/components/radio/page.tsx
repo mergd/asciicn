@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DocsLayout from "@/components/layout/docs-layout";
-import { RadioGroup, RadioItem } from "@/components/ascii/radio";
+import { RadioGroup, RadioItem } from "@/registry/ascii/radio";
 import Badge from "@/registry/ascii/badge";
 
 export default function RadioPage() {
@@ -28,7 +28,7 @@ export default function RadioPage() {
         <section>
           <h2 className="text-2xl font-semibold">installation</h2>
           <pre className="mt-3 overflow-x-auto border border-border bg-muted/30 p-3 text-xs">
-            npx shadcn@latest add https://asciicn.com/r/radio.json
+            npx shadcn@latest add https://asciicn.fldr.zip/r/radio.json
           </pre>
         </section>
 
@@ -72,11 +72,20 @@ export default function Example() {
             </div>
 
             <div>
-              <h3 className="mb-2 text-sm">with sizes</h3>
+              <h3 className="mb-2 text-sm">text variant (default)</h3>
               <RadioGroup value={size} onValueChange={setSize} name="size">
-                <RadioItem value="small" label="small" />
-                <RadioItem value="medium" label="medium" />
-                <RadioItem value="large" label="large" />
+                <RadioItem value="small" label="small" variant="text" />
+                <RadioItem value="medium" label="medium" variant="text" />
+                <RadioItem value="large" label="large" variant="text" />
+              </RadioGroup>
+            </div>
+
+            <div>
+              <h3 className="mb-2 text-sm">icon variant</h3>
+              <RadioGroup value={size} onValueChange={setSize} name="size-icon">
+                <RadioItem value="small" label="small" variant="icon" />
+                <RadioItem value="medium" label="medium" variant="icon" />
+                <RadioItem value="large" label="large" variant="icon" />
               </RadioGroup>
             </div>
 
@@ -182,6 +191,13 @@ export default function Example() {
                   <div className="text-muted-foreground">boolean</div>
                   <div className="text-muted-foreground">
                     disable this specific item
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-2 p-2">
+                  <div>variant</div>
+                  <div className="text-muted-foreground">string</div>
+                  <div className="text-muted-foreground">
+                    optional variant for the radio item
                   </div>
                 </div>
               </div>

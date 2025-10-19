@@ -20,7 +20,7 @@ export default function BadgePage() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">installation</h2>
           <pre className="border border-border bg-muted/30 p-3 overflow-x-auto text-xs">
-            npx shadcn@latest add https://asciicn.com/r/badge.json
+            npx shadcn@latest add https://asciicn.fldr.zip/r/badge.json
           </pre>
         </div>
 

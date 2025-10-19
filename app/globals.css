@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "JetBrains Mono Nerd Font";
-  src: url("/fonts/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
+  font-family: "MesloLGM Nerd Font";
+  src: url("/fonts/MesloLGMNerdFont-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
-  --font-mono: "JetBrains Mono Nerd Font", "JetBrains Mono", monospace;
+  --font-mono: "MesloLGM Nerd Font", "Menlo", "Monaco", monospace;
 
   /* Light mode colors */
   --color-background: hsl(210 40% 98%);
@@ -67,7 +67,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "JetBrains Mono Nerd Font", "JetBrains Mono", monospace;
+    font-family: "MesloLGM Nerd Font", "Menlo", "Monaco", monospace;
     font-size: 14px;
     line-height: 1.6;
   }

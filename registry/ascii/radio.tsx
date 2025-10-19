@@ -44,10 +44,20 @@ interface RadioItemProps {
   label?: string;
   disabled?: boolean;
   className?: string;
+  variant?: "icon" | "text";
 }
 
 export const RadioItem = forwardRef<HTMLInputElement, RadioItemProps>(
-  ({ value, label, disabled: itemDisabled = false, className = "" }, ref) => {
+  (
+    {
+      value,
+      label,
+      disabled: itemDisabled = false,
+      className = "",
+      variant = "text",
+    },
+    ref
+  ) => {
     const context = useContext(RadioGroupContext);
     if (!context) {
       throw new Error("RadioItem must be used within RadioGroup");
@@ -68,6 +78,9 @@ export const RadioItem = forwardRef<HTMLInputElement, RadioItemProps>(
       }
     };
 
+    const icon =
+      variant === "icon" ? (isChecked ? "●" : "○") : isChecked ? "(•)" : "( )";
+
     return (
       <label
         className={`flex items-center gap-2 cursor-pointer select-none text-sm transition-opacity ${
@@ -84,7 +97,7 @@ export const RadioItem = forwardRef<HTMLInputElement, RadioItemProps>(
           disabled={isDisabled}
           className="sr-only"
         />
-        <span className="font-mono">{isChecked ? "(●)" : "( )"}</span>
+        <span className="font-mono text-base">{icon}</span>
         {label && <span>{label}</span>}
       </label>
     );

@@ -35,5 +35,5 @@ import Badge from "@/registry/ascii/badge";
 users install via:
 
 ```bash
-npx shadcn@latest add https://asciicn.com/r/[component].json
+npx shadcn@latest add https://asciicn.fldr.zip/r/[component].json
 ```
